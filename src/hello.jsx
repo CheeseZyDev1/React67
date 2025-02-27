@@ -1,0 +1,14 @@
+const hello = ({ message, name}) => {
+    console.log(message, name);
+    return (
+        <div>
+            <h1>{name} {message}</h1>
+        </div>
+    );
+}
+import PropTypes from 'prop-types';
+hello.propTypes = {
+    message: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+};
+export default hello;
